@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية - Noursal</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Maldino/Noursal-Books-Library/refs/heads/main/images/N.png">
+    
+    <style>
+        :root {
+            --primary-color: #1a365d; /* كحلي عميق */
+            --accent-color: #2b6cb0; /* أزرق براند */
+            --text-color: #2d3748;
+            --light-gray: #718096;
+            --bg-color: #f8fafc;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .legal-document {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 0;
+            border-radius: 24px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        /* --- الهيدر الجديد: ألوان فاتحة وتباين عالي --- */
+        .tech-header {
+            background-color: #ffffff;
+            padding: 60px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 35px;
+            border-bottom: 1px solid #edf2f7;
+            flex-wrap: wrap;
+            background-image: radial-gradient(#edf2f7 1px, transparent 1px);
+            background-size: 20px 20px; /* خلفية منقطة خفيفة تعطي طابع تكنولوجي */
+        }
+
+        .brand-content {
+            text-align: right;
+        }
+
+        .dev-name {
+            font-size: 58px;
+            font-weight: 900;
+            margin: 0;
+            letter-spacing: -2px;
+            line-height: 1;
+            color: var(--primary-color);
+        }
+
+        .dev-slogan {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 10px 0 0 0;
+            letter-spacing: 5px;
+            color: var(--light-gray);
+            text-transform: uppercase;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        /* انيميشن اللوجو المحسن */
+        .logo-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .logo-wrapper img {
+            max-width: 110px;
+            height: auto;
+            z-index: 2;
+            /* ظل ناعم خلف اللوجو ليبرز عن الخلفية البيضاء */
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+        }
+
+        /* تأثير النبض الخفيف جداً */
+        .logo-wrapper::after {
+            content: '';
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            background: rgba(43, 108, 176, 0.1);
+            border-radius: 50%;
+            animation: pulse 2.5s infinite;
+            z-index: 1;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.5; }
+            70% { transform: scale(1.6); opacity: 0; }
+            100% { transform: scale(1); opacity: 0; }
+        }
+
+        /* --- محتوى الوثيقة --- */
+        .content-body {
+            padding: 40px 60px;
+        }
+
+        .doc-meta {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #f1f5f9;
+        }
+
+        .doc-title {
+            font-size: 26px;
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-weight: 800;
+        }
+
+        .updated-date {
+            font-size: 14px;
+            color: var(--light-gray);
+            font-weight: 600;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            font-size: 22px;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+        }
+
+        h2::before {
+            content: '';
+            width: 6px;
+            height: 24px;
+            background: var(--accent-color);
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        p, li {
+            font-size: 16px;
+            color: #4a5568;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        .highlight-box {
+            background: #f1f5f9;
+            border-right: 6px solid var(--accent-color);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 35px 0;
+        }
+
+        .footer {
+            background: #ffffff;
+            padding: 50px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--light-gray);
+            border-top: 1px solid #edf2f7;
+        }
+
+        @media (max-width: 600px) {
+            .tech-header {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 40px 20px;
+                gap: 25px;
+            }
+            .brand-content { text-align: center; }
+            .dev-name { font-size: 45px; }
+            .dev-slogan { letter-spacing: 2px; font-size: 14px; }
+            .content-body { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="legal-document">
+        <header class="tech-header">
+            <div class="brand-content">
+                <h1 class="dev-name">Noursal</h1>
+                <p class="dev-slogan">We Make Apps</p>
+            </div>
+            <div class="logo-wrapper">
+                <img src="https://raw.githubusercontent.com/Maldino/Noursal-Books-Library/refs/heads/main/images/N.png" alt="Noursal Logo">
+            </div>
+        </header>
+
+        <div class="content-body">
+            <div class="doc-meta">
+                <h1 class="doc-title">سياسة الخصوصية الشاملة</h1>
+                <div class="updated-date">تاريخ آخر تحديث: مارس 2026م | تطبيق: آخر مرة (Last Time)</div>
+            </div>
+
+            <p>تم بناء تطبيق <strong>"آخر مرة"</strong> بواسطة Noursal كتطبيق مجاني (Freemium) مدعوم بالإعلانات مع خيار الشراء داخل التطبيق (In-App Purchases). يتم توفير هذه الخدمة بواسطة Noursal وهي مخصصة للاستخدام كما هي. تُستخدم هذه الصفحة لإعلام الزوار والمستخدمين بسياساتنا المتعلقة بجمع واستخدام والكشف عن المعلومات الشخصية.</p>
+            <p>إذا اخترت استخدام خدمتنا، فإنك توافق على جمع واستخدام المعلومات فيما يتعلق بهذه السياسة. نحن لن نستخدم أو نشارك معلوماتك مع أي شخص باستثناء ما هو موضح في سياسة الخصوصية هذه.</p>
+
+            <h2>1. جمع المعلومات واستخدامها (التخزين المحلي)</h2>
+            <p>للحصول على تجربة أفضل أثناء استخدام خدمتنا، التطبيق مصمم بطبيعته لحماية خصوصيتك التامة:</p>
+            <ul>
+                <li><strong>البيانات المدخلة:</strong> جميع الأحداث، التواريخ، الإعدادات، وأي نصوص تقوم بإدخالها في التطبيق يتم تخزينها <strong>محلياً فقط (Locally)</strong> على الذاكرة الداخلية لجهازك. نحن لا نمتلك أي خوادم (Servers) ولا نقوم بنقل أو تخزين أو معالجة هذه البيانات خارج هاتفك بأي شكل من الأشكال.</li>
+                <li><strong>معلومات الحساب:</strong> التطبيق لا يتطلب إنشاء حساب، ولا يطلب إدخال اسمك، بريدك الإلكتروني، أو رقم هاتفك.</li>
+            </ul>
+
+            <h2>2. المشتريات داخل التطبيق (In-App Purchases)</h2>
+            <div class="highlight-box">
+                <p style="margin:0; font-weight: bold; color: var(--primary-color);">لإلغاء قفل "الحزمة الذهبية" والميزات المتقدمة، نستخدم نظام الفوترة الرسمي والآمن من جوجل (Google Play Billing). نحن كمطورين (Noursal) لا نجمع، لا نعالج، ولا نحتفظ بأي معلومات مالية حساسة.</p>
+            </div>
+            <p>تتم معالجة جميع المعاملات المالية بالكامل من خلال خوادم شركة Google، وتخضع لسياسة خصوصية Google Play. تقتصر معرفتنا فقط على "حالة الشراء" لضمان تفعيل الميزات لك.</p>
+
+            <h2>3. مزودو خدمات الطرف الثالث (Third-Party Services)</h2>
+            <p>يستخدم التطبيق خدمات تابعة لجهات خارجية قد تقوم بجمع معلومات تُستخدم لتحديد هويتك (مثل مُعرف الإعلانات Advertising ID أو عنوان IP). في النسخة المجانية، نستخدم هذه الخدمات لتوفير الإعلانات وتحليل أداء التطبيق:</p>
+            <ul>
+                <li><a href="https://policies.google.com/privacy" target="_blank">Google Play Services</a></li>
+                <li><a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob (لتقديم الإعلانات المخصصة)</a></li>
+            </ul>
+
+            <h2>4. بيانات السجل والأعطال (Log Data & Crashlytics)</h2>
+            <p>نود إعلامك أنه في حالة حدوث خطأ أو توقف مفاجئ في التطبيق، نقوم بجمع بيانات ومعلومات (من خلال منتجات طرف ثالث) تساعدنا في إصلاح الأعطال برمجياً، ولا ترتبط هذه البيانات بهويتك الشخصية.</p>
+
+            <h2>5. ملفات تعريف الارتباط (Cookies)</h2>
+            <p>لا يستخدم هذا التطبيق "ملفات تعريف الارتباط" (Cookies) بشكل صريح. ومع ذلك، قد يستخدم التطبيق أكواداً برمجية ومكتبات تابعة لجهات خارجية تستخدمها لجمع المعلومات وتحسين خدماتها.</p>
+
+            <h2>6. خصوصية الأطفال (Children’s Privacy)</h2>
+            <p>هذه الخدمات لا تخاطب الأشخاص الذين تقل أعمارهم عن 13 عاماً. نحن لا نجمع معلومات تعريف شخصية من الأطفال عن قصد. إذا اكتشفنا أن طفلاً أقل من 13 عاماً قد زودنا بمعلومات، فإننا نقوم بحذفها على الفور.</p>
+
+            <h2>7. الأمان وحماية البيانات</h2>
+            <p>نحن نقدر ثقتك، ونحن نسعى جاهدين لاستخدام وسائل مقبولة حماية جهازك. ولكن تذكر أنه لا توجد طريقة نقل عبر الإنترنت أو تخزين إلكتروني آمنة بنسبة 100٪. تظل مسؤولية حماية الجهاز بكلمة مرور تقع على عاتق المستخدم.</p>
+
+            <h2>8. التغييرات على سياسة الخصوصية</h2>
+            <p>قد نقوم بتحديث سياسة الخصوصية الخاصة بنا من وقت لآخر. ننصحك بمراجعة هذه الصفحة بشكل دوري. إن استمرار استخدامك للتطبيق يُعد موافقة ضمنية على البنود الجديدة.</p>
+
+            <h2>9. اتصل بنا</h2>
+            <p>إذا كان لديك أي أسئلة حول سياسة الخصوصية، فلا تتردد في الاتصال بنا عبر البريد الإلكتروني المخصص للدعم الفني في صفحة التطبيق على متجر Google Play.</p>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Noursal. جميع الحقوق محفوظة.
+        </div>
+    </div>
+
+</body>
+</html>
